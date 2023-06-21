@@ -19,11 +19,9 @@ public:
     ListNode *tmpList2 = list2;
     ListNode *res = new ListNode();
 
-    int v1, v2;
-
     while (tmpList1 != NULL && tmpList2 != NULL) {
-      v1 = tmpList1->val;
-      v2 = tmpList2->val;
+      int v1 = tmpList1->val;
+      int v2 = tmpList2->val;
 
       if (v1 == v2) {
         add_node(res, new ListNode(v1, new ListNode(v2)));
