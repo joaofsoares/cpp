@@ -31,11 +31,25 @@ int solution(std::vector<int> &A) {
   return res;
 }
 
+int solution_two(std::vector<int> &A) {
+  std::sort(A.begin(), A.end());
+  int n{1};
+
+  for (int a : A) {
+    if (n == a)
+      ++n;
+  }
+
+  return n;
+}
+
 int main() {
   // std::vector<int> v{1, 2, 3};
   // std::vector<int> v{-1, -3};
   std::vector<int> v{1, 3, 6, 4, 1, 2};
   int res{solution(v)};
   std::cout << "res: " << res << std::endl;
+  int res2{solution_two(v)};
+  std::cout << "res two: " << res2 << std::endl;
   return 0;
 }
