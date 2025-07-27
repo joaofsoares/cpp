@@ -1,21 +1,3 @@
-#include "hello_world.h"
-
-using namespace std;
-
-namespace hello_world
-{
-
-string hello()
-{
-    return "Hello, World!";
-}
-
-}
-
-
-
-
-
 // This is an include guard.
 // You could alternatively use '#pragma once'
 // See https://en.wikipedia.org/wiki/Include_guard
@@ -35,7 +17,6 @@ namespace hello_world {
 // 'hello_world::hello()'.
 std::string hello();
 
-}  // namespace hello_world
+} // namespace hello_world
 
 #endif
-
